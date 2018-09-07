@@ -2,5 +2,6 @@ pipeline:
   build:
     image: golang:alpine
     commands:
+      - apk add git
       - go version
       - go get -u github.com/Masterminds/glide
